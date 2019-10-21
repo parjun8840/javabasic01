@@ -24,6 +24,7 @@ import parjun8840.bankapp.entity.Account;
  * b) loadClass() (If it finds the handle goes to defineClass() else to findSystemClass().)
  * c) findSystemClass() (Like built-in String class is in rt.jar and it would be loaded. Pls don't use same name as built-in as it gets priority.)
  * d) defineClass() (Output of define class is not portable, the output of defineClass is make portable to the machine)
+ * UI could be: console based, web based, mobile based.
  */
 public class AccountClient {
 
