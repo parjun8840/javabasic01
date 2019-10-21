@@ -28,6 +28,7 @@ import parjun8840.bankapp.entity.Account;
 public class AccountClient {
 
 	public static void main(String[] args) {
+		System.out.println(Account.getCount());
 		Account first = new Account("SBI007"); // First time will be loaded by loadClass(). Compiled code always be fqdn- parjun8840.bankapp.entity.Account no import. 
 		Account second = new Account();// Will be find by findLoaderClass(). New is for dynamically memory allocation and goes to heap.
 	
@@ -45,6 +46,7 @@ public class AccountClient {
 		
 		System.out.println("Scond account number");
 		System.out.println("Account Number: "+ second.getAccountNo());
+		System.out.println(Account.getCount());
 		
 
 	}
